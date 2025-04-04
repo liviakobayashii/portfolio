@@ -13,7 +13,7 @@ export default function MainSection() {
         <h1 className="text-7xl font-bold self-center">
           Transformando suas ideias em resultados
         </h1>
-        <p className="text-xl text-justify text-gray-400">
+        <p className="text-xl text-justify text-gray-400 w-3xl">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
           similique libero. Cumque omnis, cum error aliquam aliquid iure quo
           sequi, ipsa magnam asperiores doloribus nesciunt, neque consectetur
