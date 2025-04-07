@@ -6,11 +6,9 @@ import { Project } from "@/data/projects/project";
 export default function Projects() {
   const [filter, setFilter] = useState("all");
 
-  const filteredProjects = Project.filter((item) => {
-    if (filter === "all") return true;
-    if (filter === "web") return item.web;
-    if (filter === "design") return item.design;
-  });
+  const filteredProjects = Project.filter((item) =>
+    filter === "all" ? true : item.type === filter
+  );
 
   return (
     <section className="flex flex-col gap-6 justify-center items-center py-30 h-screen">
@@ -50,6 +48,10 @@ export default function Projects() {
             <p className="mt-2 text-white">{item.nome}</p>
           </div>
         ))}
+
+        {filteredProjects.length === 0 && (
+          <p className="text-white">Nenhum projeto encontrado.</p>
+        )}
       </div>
     </section>
   );
