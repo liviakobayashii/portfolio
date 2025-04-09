@@ -3,4 +3,5 @@ export type ProjectType = {
   nome: string;
   imagem: string;
   type: "web" | "mobile" | "design";
+  project_technologies: string[];
 };

@@ -1,0 +1,18 @@
+export const technologies = [
+  { name: "html5", icon: "simple-icons:html5" },
+  { name: "css3", icon: "simple-icons:css3" },
+  { name: "js", icon: "simple-icons:javascript" },
+  { name: "ts", icon: "cib:typescript" },
+  { name: "react", icon: "simple-icons:react" },
+  { name: "next", icon: "simple-icons:nextdotjs" },
+  { name: "php", icon: "simple-icons:php" },
+  { name: "sql", icon: "fontisto:mysql" },
+  { name: "git", icon: "simple-icons:git" },
+  { name: "github", icon: "simple-icons:github" },
+  { name: "tailwind", icon: "simple-icons:tailwindcss" },
+  { name: "shadcn", icon: "simple-icons:shadcnui" },
+  { name: "axios", icon: "simple-icons:axios" },
+  { name: "figma", icon: "simple-icons:figma" },
+  { name: "gimp", icon: "simple-icons:gimp" },
+  { name: "photoshop", icon: "mage:photoshop" },
+];
