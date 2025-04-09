@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Project } from "@/data/projects/project";
+import Description from "./description";
 
 export default function Projects() {
   const [filter, setFilter] = useState("all");
@@ -11,12 +12,12 @@ export default function Projects() {
   );
 
   return (
-    <section className="flex flex-col gap-6 justify-center items-center py-30 h-screen">
+    <section className="flex flex-col gap-6 justify-center items-center py-30">
       <h2 className="text-4xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold">
         Projetos
       </h2>
 
-      <ul className="flex gap-4 text-white font-medium text-lg">
+      <ul className="flex gap-5 text-white font-medium text-md">
         <li
           onClick={() => setFilter("all")}
           className={`cursor-pointer ${filter === "all" ? "underline" : ""}`}
@@ -27,7 +28,13 @@ export default function Projects() {
           onClick={() => setFilter("web")}
           className={`cursor-pointer ${filter === "web" ? "underline" : ""}`}
         >
-          Web
+          Aplicativos web
+        </li>
+        <li
+          onClick={() => setFilter("mobile")}
+          className={`cursor-pointer ${filter === "mobile" ? "underline" : ""}`}
+        >
+          Aplicativos mobile
         </li>
         <li
           onClick={() => setFilter("design")}
@@ -37,15 +44,30 @@ export default function Projects() {
         </li>
       </ul>
 
-      <div className="flex flex-wrap gap-4 justify-center mt-4">
+      <div className="grid grid-cols-4 gap-3 mt-4">
         {filteredProjects.map((item) => (
-          <div key={item.id} className="text-center">
+          <div
+            key={item.id}
+            className=" border border-fuchsia-600 rounded-sm bg-[#353535]"
+          >
             <img
               src={item.imagem}
               alt={item.nome}
-              className="w-32 h-32 object-cover rounded-lg"
+              className={`w-85 object-cover rounded-sm ${
+                item.type === "design" ? "h-85" : "h-70"
+              }`}
             />
-            <p className="mt-2 text-white">{item.nome}</p>
+            {item.type !== "design" && (
+              <div className="px-3 h-15">
+                {item.type === "web" && (
+                  <Description>APLICATIVO WEB</Description>
+                )}
+                {item.type === "mobile" && (
+                  <Description>APLICATIVO MOBILE</Description>
+                )}
+                <p className="mt-2 text-white">{item.nome}</p>
+              </div>
+            )}
           </div>
         ))}
 
