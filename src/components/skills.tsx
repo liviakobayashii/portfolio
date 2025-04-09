@@ -3,7 +3,7 @@ import IconSkills from "./icons/icons-skills";
 export default function Skills() {
   return (
     <section className="flex flex-col gap-6 justify-center items-center py-30 h-screen bg-radial from-fuchsia-800 via-fuchsia-900 via-10%  to-black">
-      <div className="flex flex-col justi7 items-center">
+      <div className="flex flex-col justify-center items-center">
         <h2 className="text-4xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold">
           Habilidades
         </h2>
@@ -13,7 +13,7 @@ export default function Skills() {
         <IconSkills icon="simple-icons:html5" description="HTML5" />
         <IconSkills icon="simple-icons:css3" description="CSS3" />
         <IconSkills icon="simple-icons:javascript" description="Javascript" />
-        <IconSkills icon="simple-icons:typescript" description="Typescript" />
+        <IconSkills icon="cib:typescript" description="Typescript" />
         <IconSkills icon="simple-icons:react" description="ReactJs" />
         <IconSkills icon="simple-icons:nextdotjs" description="NextJs" />
         <IconSkills icon="simple-icons:php" description="PHP" />
