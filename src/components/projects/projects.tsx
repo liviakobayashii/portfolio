@@ -14,7 +14,7 @@ export default function Projects() {
   );
 
   return (
-    <section className="flex flex-col gap-6 justify-center items-center py-30">
+    <section className="flex flex-col gap-6 justify-center items-center py-30 bg-radial from-[#242424] via-[#1c1c1c] to-[#161616]">
       <h2 className="text-4xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold">
         Projetos
       </h2>
