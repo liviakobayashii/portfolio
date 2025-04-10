@@ -1,25 +1,17 @@
-import SocialIcons from "./social-icons";
+import { social } from "@/data/social";
+import Link from "next/link";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 export default function Social() {
   return (
     <div className="flex gap-3">
-      <SocialIcons
-        href="https://www.linkedin.com/in/liviakobayashii"
-        icon="mdi:linkedin"
-      />
-      <SocialIcons
-        href="https://github.com/liviakobayashii"
-        icon="mdi:github"
-      />
-      <SocialIcons href="https://wa.me/5514920006436" icon="mdi:whatsapp" />
-      <SocialIcons
-        href="https://www.facebook.com/liviakobayashii"
-        icon="mdi:facebook"
-      />
-      <SocialIcons
-        href="https://www.instagram.com/liviakobayashii"
-        icon="mdi:instagram"
-      />
+      {social.map((item, i) => (
+        <Link key={i} href={item.href} target="_blank">
+          <button className="bg-fuchsia-600 p-3 rounded-sm cursor-pointer hover:bg-fuchsia-700 duration-200">
+            <Icon icon={item.icon} className="size-5" />
+          </button>
+        </Link>
+      ))}
     </div>
   );
 }

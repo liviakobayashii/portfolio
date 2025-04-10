@@ -1,4 +1,5 @@
-import IconSkills from "./icons/icons-skills";
+import { technologies } from "@/data/technologies";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 export default function Skills() {
   return (
@@ -10,22 +11,15 @@ export default function Skills() {
         <p>Tecnologias que utilizo ou já utilizei</p>
       </div>
       <div className="grid grid-cols-5 gap-3 justify-center items-center">
-        <IconSkills icon="simple-icons:html5" description="HTML5" />
-        <IconSkills icon="simple-icons:css3" description="CSS3" />
-        <IconSkills icon="simple-icons:javascript" description="Javascript" />
-        <IconSkills icon="cib:typescript" description="Typescript" />
-        <IconSkills icon="simple-icons:react" description="ReactJs" />
-        <IconSkills icon="simple-icons:nextdotjs" description="NextJs" />
-        <IconSkills icon="simple-icons:php" description="PHP" />
-        <IconSkills icon="fontisto:mysql" description="MySql" />
-        <IconSkills icon="simple-icons:git" description="Git" />
-        <IconSkills icon="simple-icons:github" description="Github" />
-        <IconSkills icon="simple-icons:tailwindcss" description="TailwindCSS" />
-        <IconSkills icon="simple-icons:shadcnui" description="ShadcnUi" />
-        <IconSkills icon="simple-icons:axios" description="Axios" />
-        <IconSkills icon="simple-icons:figma" description="Figma" />
-        <IconSkills icon="simple-icons:gimp" description="Gimp" />
-        <IconSkills icon="mage:photoshop" description="Photoshop" />
+        {technologies.map((item, i) => (
+          <div
+            key={i}
+            className="flex flex-col justify-center items-center border border-fuchsia-600 rounded-sm p-2 cursor-pointer duration-200 hover:text-fuchsia-600"
+          >
+            <Icon icon={item.icon} className="size-10" />
+            <p className="text-sm">{item.name}</p>
+          </div>
+        ))}
       </div>
     </>
   );
