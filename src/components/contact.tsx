@@ -3,7 +3,7 @@ import ContactItem from "./contact-item";
 export default function Contact() {
   return (
     <>
-      <section className=" flex justify-between w-4xl p-10 rounded-sm bg-fuchsia-950 shadow-lg">
+      <section className=" justify-between w-4xl p-10 rounded-sm bg-fuchsia-950 shadow-lg hidden">
         <div className=" flex flex-col gap-8 justify-center ">
           <div className="flex flex-col gap-1">
             <h2 className="text-5xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold">
