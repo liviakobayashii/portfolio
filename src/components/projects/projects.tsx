@@ -15,11 +15,11 @@ export default function Projects() {
 
   return (
     <>
-      <h2 className="text-5xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold">
+      <h2 className="text-5xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold pb-2">
         Projetos
       </h2>
 
-      <ul className="flex gap-5 text-white font-medium text-md">
+      <ul className="flex gap-5 text-neutral-200 font-medium text-md">
         <li
           onClick={() => setFilter("all")}
           className={`cursor-pointer ${
@@ -63,7 +63,7 @@ export default function Projects() {
           return (
             <div
               key={item.id}
-              className=" border border-fuchsia-600 rounded-sm bg-[#353535]"
+              className=" border border-fuchsia-600 rounded-sm bg-[#353535] shadow-lg"
             >
               <img
                 src={item.imagem}
@@ -80,14 +80,14 @@ export default function Projects() {
                   {item.type === "mobile" && (
                     <Description>APLICATIVO MOBILE</Description>
                   )}
-                  <p className=" text-white">{item.nome}</p>
+                  <p className=" text-neutral-200">{item.nome}</p>
 
                   <div className="flex flex-wrap gap-1">
                     {badges.map((badge, i) => (
                       <Icon
                         key={i}
                         icon={badge.icon}
-                        className="size-10 border border-fuchsia-600 p-2 rounded-sm"
+                        className="size-10 border border-fuchsia-600 text-white p-2 rounded-sm"
                       />
                     ))}
                   </div>

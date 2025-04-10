@@ -11,8 +11,8 @@ export default function ContactItem({ icon, title, subtitle }: Props) {
     <div className="flex items-center gap-2">
       <Icon icon={icon} className="size-6 text-fuchsia-600" />
       <div>
-        <p className="font-bold text-xl">{title}</p>
-        <p className="text-gray-300">{subtitle}</p>
+        <p className="font-bold text-xl text-neutral-200">{title}</p>
+        <p className="text-neutral-200/70">{subtitle}</p>
       </div>
     </div>
   );

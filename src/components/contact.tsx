@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
 import ContactItem from "./contact-item";
 
 export default function Contact() {
@@ -10,7 +9,10 @@ export default function Contact() {
             <h2 className="text-5xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold">
               Contato
             </h2>
-            <p className="text-sm text-gray-300">Canais de comunicação</p>
+            <p className="text-neutral-200/70 w-xs">
+              Sinta-se à vontade para entrar em contato comigo através dos
+              canais abaixo.
+            </p>
           </div>
           <ContactItem
             icon="line-md:email-multiple"
@@ -30,7 +32,7 @@ export default function Contact() {
         </div>
         <img src="contact.png" alt="Contact" className="size-96" />
       </section>
-      <footer className="mt-20 text-sm">
+      <footer className="mt-20 text-sm text-neutral-200">
         &copy; Desenvolvido por Livia Kobayashi
       </footer>
     </>
