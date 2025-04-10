@@ -2,7 +2,7 @@ import Header from "./header";
 
 export default function MainSection() {
   return (
-    <section className="flex flex-col h-screen bg-radial from-fuchsia-800 via-fuchsia-900 via-10%  to-black">
+    <>
       <Header />
       <div className="flex flex-col gap-10 justify-center items-center h-full  max-w-5xl text-center self-center ">
         <h2 className="text-3xl font-bold">
@@ -22,6 +22,6 @@ export default function MainSection() {
           voluptatem beatae suscipit.
         </p> */}
       </div>
-    </section>
+    </>
   );
 }

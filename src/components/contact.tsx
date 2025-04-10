@@ -3,7 +3,7 @@ import ContactItem from "./contact-item";
 
 export default function Contact() {
   return (
-    <section className=" flex flex-col justify-center items-center 'py-30 h-screen bg-[url('/background.png')] bg-cover bg-center w-full">
+    <>
       <section className="flex justify-center items-center ">
         <section className=" flex justify-between w-4xl p-10 rounded-sm bg-fuchsia-950 shadow-lg">
           <div className=" flex flex-col gap-5 justify-center ">
@@ -35,6 +35,6 @@ export default function Contact() {
       <footer className="mt-20 text-sm">
         &copy; Desenvolvido por Livia Kobayashi
       </footer>
-    </section>
+    </>
   );
 }

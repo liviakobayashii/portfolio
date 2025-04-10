@@ -2,7 +2,7 @@ import IconSkills from "./icons/icons-skills";
 
 export default function Skills() {
   return (
-    <section className="flex flex-col gap-6 justify-center items-center py-30 h-screen bg-[url('/background.png')] bg-cover bg-center w-full">
+    <>
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-4xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold">
           Habilidades
@@ -27,6 +27,6 @@ export default function Skills() {
         <IconSkills icon="simple-icons:gimp" description="Gimp" />
         <IconSkills icon="mage:photoshop" description="Photoshop" />
       </div>
-    </section>
+    </>
   );
 }
