@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <div className="flex max-md:flex-col md:justify-between md:items-center px-4 py-10 bg-black/30">
@@ -7,9 +9,11 @@ export default function Header() {
           Kobayashi
         </span>
       </h1>
-      <button className=" max-md:hidden bg-fuchsia-600 p-3 rounded-sm text-xl text-neutral-200 font-bold">
-        Baixar CV
-      </button>
+      <Link href="curriculo.pdf" target="_blank">
+        <button className=" max-md:hidden bg-fuchsia-600 p-3 rounded-sm text-neutral-200 font-bold hover:cursor-pointer hover:bg-fuchsia-700 duration-200">
+          Baixar CV
+        </button>
+      </Link>
     </div>
   );
 }
