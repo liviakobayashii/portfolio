@@ -4,4 +4,7 @@ export type ProjectType = {
   imagem: string;
   type: "web" | "mobile" | "design";
   project_technologies: string[];
+  descricao: string;
+  deploy: string;
+  github: string;
 };

@@ -5,6 +5,7 @@ import { Project } from "@/data/projects/project";
 import Description from "./description";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { technologies } from "@/data/technologies";
+import Modal from "../modal";
 
 export default function Projects() {
   const [filter, setFilter] = useState("all");
@@ -77,39 +78,53 @@ export default function Projects() {
           );
 
           return (
-            <div
+            <Modal
               key={item.id}
-              className=" border border-fuchsia-600 rounded-sm bg-[#353535] shadow-lg"
+              projectName={item.nome}
+              projectImage={item.imagem}
+              linkDeploy={item.deploy}
+              linkGitHub={item.github}
+              projectTechnologies={badges.map((badge, i) => (
+                <Icon
+                  key={i}
+                  icon={badge.icon}
+                  className="size-10 border border-fuchsia-600 text-fuchsia-600 p-2 rounded-sm"
+                />
+              ))}
+              projectDescription={item.descricao}
             >
-              <img
-                src={item.imagem}
-                alt={item.nome}
-                className={`object-cover rounded-sm ${
-                  item.type === "design" ? "h-full" : "h-auto "
-                }`}
-              />
-              {item.type !== "design" && (
-                <div className="flex flex-col p-3 h-auto gap-2">
-                  {item.type === "web" && (
-                    <Description>APLICATIVO WEB</Description>
-                  )}
-                  {item.type === "mobile" && (
-                    <Description>APLICATIVO MOBILE</Description>
-                  )}
-                  <p className=" text-neutral-200">{item.nome}</p>
+              <div className=" flex flex-col border border-fuchsia-600 rounded-sm bg-[#353535] shadow-lg  hover:cursor-pointer">
+                <img
+                  src={item.imagem}
+                  alt={item.nome}
+                  className={`object-cover rounded-sm ${
+                    item.type === "design" ? "h-full" : "h-auto "
+                  }`}
+                />
+                {item.type !== "design" && (
+                  // <div className="flex flex-col p-3 h-auto gap-2 self-start">
+                  <div className="flex flex-col p-3 h-auto gap-2 w-full">
+                    {item.type === "web" && (
+                      <Description>APLICATIVO WEB</Description>
+                    )}
+                    {item.type === "mobile" && (
+                      <Description>APLICATIVO MOBILE</Description>
+                    )}
+                    <p className=" text-neutral-200 self-start">{item.nome}</p>
 
-                  <div className="flex flex-wrap gap-1">
-                    {badges.map((badge, i) => (
-                      <Icon
-                        key={i}
-                        icon={badge.icon}
-                        className="size-10 border border-fuchsia-600 text-white p-2 rounded-sm"
-                      />
-                    ))}
+                    <div className="flex flex-wrap gap-1">
+                      {badges.map((badge, i) => (
+                        <Icon
+                          key={i}
+                          icon={badge.icon}
+                          className="size-10 border border-fuchsia-600 text-white p-2 rounded-sm"
+                        />
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
+                )}
+              </div>
+            </Modal>
           );
         })}
 
