@@ -1,3 +1,7 @@
+const phone = "5514920006436";
+const message = "Olá! Vi seu portfólio e gostaria de conversar!";
+const encodedMessage = encodeURIComponent(message);
+
 export const social = [
   {
     name: "Linkedin",
@@ -11,7 +15,7 @@ export const social = [
   },
   {
     name: "Whatsapp",
-    href: "https://wa.me/5514920006436",
+    href: `https://wa.me/${phone}?text=${encodedMessage}`,
     icon: "mdi:whatsapp",
   },
   {
