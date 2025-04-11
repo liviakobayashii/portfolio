@@ -15,7 +15,7 @@ export default function Projects() {
 
   return (
     <>
-      <h2 className="text-5xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold pb-2">
+      <h2 className="max-sm:text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold">
         Projetos
       </h2>
 
@@ -30,7 +30,15 @@ export default function Projects() {
         </li>
         <li
           onClick={() => setFilter("web")}
-          className={`cursor-pointer ${
+          className={`sm:hidden cursor-pointer ${
+            filter === "web" ? "text-fuchsia-600" : ""
+          }`}
+        >
+          Web
+        </li>
+        <li
+          onClick={() => setFilter("web")}
+          className={`max-sm:hidden cursor-pointer ${
             filter === "web" ? "text-fuchsia-600" : ""
           }`}
         >
@@ -38,7 +46,15 @@ export default function Projects() {
         </li>
         <li
           onClick={() => setFilter("mobile")}
-          className={`cursor-pointer ${
+          className={`sm:hidden cursor-pointer ${
+            filter === "mobile" ? "text-fuchsia-600" : ""
+          }`}
+        >
+          Mobile
+        </li>
+        <li
+          onClick={() => setFilter("web")}
+          className={`max-sm:hidden cursor-pointer ${
             filter === "mobile" ? "text-fuchsia-600" : ""
           }`}
         >
@@ -54,7 +70,7 @@ export default function Projects() {
         </li>
       </ul>
 
-      <div className="grid grid-cols-4 gap-3 mt-4 p-10">
+      <div className="grid max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-4 p-10">
         {filteredProjects.map((item) => {
           const badges = technologies.filter((tec) =>
             item.project_technologies.includes(tec.name)
