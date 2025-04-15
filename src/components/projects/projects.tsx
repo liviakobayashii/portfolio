@@ -93,7 +93,7 @@ export default function Projects() {
               ))}
               projectDescription={item.descricao}
             >
-              <div className=" flex flex-col border border-fuchsia-600 rounded-sm bg-[#353535] shadow-lg  hover:cursor-pointer">
+              <div className=" flex flex-col border border-fuchsia-600 rounded-sm bg-[#353535] shadow-lg transition-transform duration-200 transform hover:-translate-y-1 hover:cursor-pointer ">
                 <img
                   src={item.imagem}
                   alt={item.nome}
@@ -102,7 +102,6 @@ export default function Projects() {
                   }`}
                 />
                 {item.type !== "design" && (
-                  // <div className="flex flex-col p-3 h-auto gap-2 self-start">
                   <div className="flex flex-col p-3 h-auto gap-2 w-full">
                     {item.type === "web" && (
                       <Description>APLICATIVO WEB</Description>

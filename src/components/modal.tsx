@@ -32,20 +32,20 @@ export default function Modal({
   return (
     <Dialog>
       <DialogTrigger>{children}</DialogTrigger>
-      <DialogContent>
+      <DialogContent className="lg:overflow-y-scroll max-h-[95%] lg:min-w-2xl">
         <DialogHeader>
           <DialogTitle className="text-3xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold pb-1">
             {projectName}
           </DialogTitle>
           <DialogDescription asChild>
-            <section className="flex flex-col gap-7">
-              <div className="flex flex-col gap-2 mb-3">
+            <section className="flex flex-col gap-5">
+              <div className="flex flex-col">
                 <img
                   src={projectImage}
                   alt="Imagem do projeto"
-                  className="rounded-sm shadow-lg w-100"
+                  className="rounded-sm shadow-lg min-sm:w-100 lg:w-150"
                 />
-                <div className="flex gap-3">
+                {/* <div className="flex gap-3">
                   <Link
                     href={linkDeploy}
                     className="text-white/70 hover:cursor-pointer hover:text-fuchsia-600 duration-200"
@@ -60,7 +60,7 @@ export default function Modal({
                   >
                     <Icon icon="simple-icons:github" className="size-6" />
                   </Link>
-                </div>
+                </div> */}
               </div>
               <div className="flex flex-col gap-2">
                 <p className="text-neutral-200 font-bold self-start">
@@ -75,6 +75,24 @@ export default function Modal({
                 <p className="text-neutral-200/70 text-justify">
                   {projectDescription}
                 </p>
+              </div>
+              <div className="grid grid-cols-4 justify-center items-center">
+                <Link
+                  href={linkDeploy}
+                  className="col-span-3 text-neutral-200 hover:cursor-pointer"
+                  target="_blank"
+                >
+                  <button className="p-3 rounded-sm bg-fuchsia-600 w-full">
+                    Vizualizar projeto
+                  </button>
+                </Link>
+                <Link
+                  href={linkGitHub}
+                  className="col-span-1 text-white/70 hover:cursor-pointer hover:text-fuchsia-600 duration-200"
+                  target="_blank"
+                >
+                  <Icon icon="simple-icons:github" className="size-8 w-full" />
+                </Link>
               </div>
             </section>
           </DialogDescription>
