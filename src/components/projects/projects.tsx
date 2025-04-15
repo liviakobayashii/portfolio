@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Project } from "@/data/projects/project";
+import { Project } from "@/data/project";
 import Description from "./description";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { technologies } from "@/data/technologies";
@@ -54,7 +54,7 @@ export default function Projects() {
           Mobile
         </li>
         <li
-          onClick={() => setFilter("web")}
+          onClick={() => setFilter("mobile")}
           className={`max-sm:hidden cursor-pointer ${
             filter === "mobile" ? "text-fuchsia-600" : ""
           }`}
