@@ -45,22 +45,6 @@ export default function Modal({
                   alt="Imagem do projeto"
                   className="rounded-sm shadow-lg min-sm:w-100 lg:w-150"
                 />
-                {/* <div className="flex gap-3">
-                  <Link
-                    href={linkDeploy}
-                    className="text-white/70 hover:cursor-pointer hover:text-fuchsia-600 duration-200"
-                    target="_blank"
-                  >
-                    <Icon icon="bx:link" className="size-6" />
-                  </Link>
-                  <Link
-                    href={linkGitHub}
-                    className="text-white/70 hover:cursor-pointer hover:text-fuchsia-600 duration-200"
-                    target="_blank"
-                  >
-                    <Icon icon="simple-icons:github" className="size-6" />
-                  </Link>
-                </div> */}
               </div>
               <div className="flex flex-col gap-2">
                 <p className="text-neutral-200 font-bold self-start">
