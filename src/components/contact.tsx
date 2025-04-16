@@ -1,4 +1,5 @@
 import ContactItem from "./contact-item";
+import H2 from "./h2";
 
 export default function Contact() {
   return (
@@ -7,9 +8,7 @@ export default function Contact() {
       <section className=" flex rounded-sm shadow-lg bg-fuchsia-950 m-4 p-6 lg:p-10 gap-15 ">
         <div className="flex flex-col gap-10 ">
           <div className="flex flex-col gap-2 ">
-            <h2 className="max-sm:text-3xl sm:text-4xl lg:text-5xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold">
-              Contato
-            </h2>
+            <H2 text="Contato" />
             <p className="max-sm:text-sm flex flex-wrap text-neutral-200/70 w-xs">
               Sinta-se à vontade para entrar em contato comigo através dos
               canais abaixo.

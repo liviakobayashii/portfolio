@@ -6,6 +6,7 @@ import Description from "./description";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { technologies } from "@/data/technologies";
 import Modal from "../modal";
+import H2 from "../h2";
 
 export default function Projects() {
   const [filter, setFilter] = useState("all");
@@ -16,9 +17,7 @@ export default function Projects() {
 
   return (
     <>
-      <h2 className="max-sm:text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold pb-2">
-        Projetos
-      </h2>
+      <H2 text="Projetos" />
 
       <ul className="flex gap-5 text-neutral-200 font-medium text-md">
         <li

@@ -1,13 +1,13 @@
 import { technologies } from "@/data/technologies";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import H2 from "./h2";
 
 export default function Skills() {
   return (
     <>
       <div className="flex flex-col gap-2 justify-center items-center">
-        <h2 className="max-sm:text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold">
-          Habilidades
-        </h2>
+        <H2 text="Habilidades" />
+
         <p className="text-neutral-200/70">
           Tecnologias que utilizo ou já utilizei
         </p>

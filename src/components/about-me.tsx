@@ -9,7 +9,7 @@ export default function AboutMe() {
           alt="Minha foto"
           className="max-w-50 lg:w-70 rounded-sm"
         />
-        <h2 className="max-sm:text-2xl sm:text-3xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold pb-2">
+        <h2 className="max-sm:text-3xl sm:text-4xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold pb-2">
           Front-end developer | UI/UX Designer
         </h2>
         <hr className="" />
