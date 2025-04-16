@@ -41,7 +41,7 @@ export default function Contact() {
           className="max-w-96 max-lg:hidden"
         />
       </section>
-      <footer className="mt-20 text-sm text-neutral-200" data-aos="fade-up">
+      <footer className="mt-20 text-sm text-neutral-200">
         &copy; Desenvolvido por Livia Kobayashi
       </footer>
     </>
