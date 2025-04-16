@@ -19,7 +19,10 @@ export default function Projects() {
     <>
       <H2 text="Projetos" />
 
-      <ul className="flex gap-5 text-neutral-200 font-medium text-md">
+      <ul
+        className="flex gap-5 text-neutral-200 font-medium text-md"
+        data-aos="fade-up"
+      >
         <li
           onClick={() => setFilter("all")}
           className={`cursor-pointer ${
@@ -70,7 +73,10 @@ export default function Projects() {
         </li>
       </ul>
 
-      <div className="grid max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-4 p-10">
+      <div
+        className="grid max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-4 p-10"
+        data-aos="fade-up"
+      >
         {filteredProjects.reverse().map((item) => {
           const badges = technologies.filter((tec) =>
             item.project_technologies?.includes(tec.name)

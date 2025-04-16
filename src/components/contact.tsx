@@ -5,7 +5,10 @@ export default function Contact() {
   return (
     <>
       {/* <section className=" flex justify-between rounded-sm bg-fuchsia-950 shadow-lg mx-4"> */}
-      <section className=" flex rounded-sm shadow-lg bg-fuchsia-950 m-4 p-6 lg:p-10 gap-15 ">
+      <section
+        className=" flex rounded-sm shadow-lg bg-fuchsia-950 m-4 p-6 lg:p-10 gap-15 "
+        data-aos="fade-up"
+      >
         <div className="flex flex-col gap-10 ">
           <div className="flex flex-col gap-2 ">
             <H2 text="Contato" />
@@ -38,7 +41,7 @@ export default function Contact() {
           className="max-w-96 max-lg:hidden"
         />
       </section>
-      <footer className="mt-20 text-sm text-neutral-200">
+      <footer className="mt-20 text-sm text-neutral-200" data-aos="fade-up">
         &copy; Desenvolvido por Livia Kobayashi
       </footer>
     </>

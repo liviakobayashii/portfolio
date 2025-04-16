@@ -8,11 +8,14 @@ export default function Skills() {
       <div className="flex flex-col gap-2 justify-center items-center">
         <H2 text="Habilidades" />
 
-        <p className="text-neutral-200/70">
+        <p className="text-neutral-200/70" data-aos="fade-up">
           Tecnologias que utilizo ou já utilizei
         </p>
       </div>
-      <div className="grid max-sm:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 justify-center items-center mt-4">
+      <div
+        className="grid max-sm:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 justify-center items-center mt-4"
+        data-aos="fade-up"
+      >
         {technologies.map((item, i) => (
           <div
             key={i}

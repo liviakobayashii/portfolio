@@ -1,3 +1,4 @@
+"use client";
 import AboutMe from "@/components/about-me";
 import Contact from "@/components/contact";
 import MainSection from "@/components/main-section";
@@ -7,8 +8,17 @@ import Skills from "@/components/skills";
 import { social } from "@/data/social";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+import { useEffect } from "react";
 
 export default function Page() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // duração da animação
+      once: true, // anima apenas uma vez
+    });
+  }, []);
   const linkWhatsapp = social.find((item) => item.name === "Whatsapp");
 
   return (
@@ -22,12 +32,12 @@ export default function Page() {
         </Link>
       )}
 
-      <section className="flex flex-col h-screen bg-radial from-fuchsia-800 via-fuchsia-900 via-10%  to-black">
+      <section className="flex flex-col h-screen bg-radial from-fuchsia-800 via-fuchsia-900 via-10%  to-black ">
         <MainSection />
       </section>
       <section
         id="sobreMim"
-        className="flex flex-col gap-6 py-30 bg-radial from-[#242424] via-[#1c1c1c] to-[#161616] lg:justify-center lg:items-center"
+        className="flex flex-col gap-6 py-30 bg-radial from-[#242424] via-[#1c1c1c] to-[#161616] lg:justify-center lg:items-center "
       >
         <AboutMe />
       </section>

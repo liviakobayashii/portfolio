@@ -3,7 +3,10 @@ import Social from "./icons/social";
 export default function AboutMe() {
   return (
     <>
-      <div className="flex flex-col gap-4 px-3 max-md:px-6 lg:w-2/3">
+      <div
+        className="flex flex-col gap-4 px-3 max-md:px-6 lg:w-2/3"
+        data-aos="fade-up"
+      >
         <img
           src="perfil.jpg"
           alt="Minha foto"
@@ -14,7 +17,10 @@ export default function AboutMe() {
         </h2>
         <hr className="" />
       </div>
-      <div className="flex flex-col gap-6 px-3 max-md:px-6 lg:w-2/3">
+      <div
+        className="flex flex-col gap-6 px-3 max-md:px-6 lg:w-2/3"
+        data-aos="fade-up"
+      >
         <p className="text-justify text-neutral-200/70">
           Desenvolvedora Front-end & UI/UX Designer, movida por desafios e
           apaixonada por tecnologia. Tenho um olhar atento para a experiência do

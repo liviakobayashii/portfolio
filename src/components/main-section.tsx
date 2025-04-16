@@ -4,7 +4,10 @@ export default function MainSection() {
   return (
     <>
       <Header />
-      <div className="flex flex-col gap-6 justify-center items-center h-screen text-center">
+      <div
+        className="flex flex-col gap-6 justify-center items-center h-screen text-center"
+        data-aos="fade"
+      >
         <div className="lg:w-1/2">
           <h2 className="lg:text-xl font-bold text-neutral-200/70">
             Seja bem vindo(a) ao meu{" "}
