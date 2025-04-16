@@ -73,7 +73,7 @@ export default function Projects() {
       <div className="grid max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-4 p-10">
         {filteredProjects.reverse().map((item) => {
           const badges = technologies.filter((tec) =>
-            item.project_technologies.includes(tec.name)
+            item.project_technologies?.includes(tec.name)
           );
 
           return (
@@ -92,14 +92,26 @@ export default function Projects() {
               ))}
               projectDescription={item.descricao}
             >
-              <div className=" flex flex-col border border-fuchsia-600 rounded-sm bg-[#353535] shadow-lg transition-transform duration-200 transform hover:-translate-y-1 hover:cursor-pointer ">
-                <img
-                  src={item.imagem}
-                  alt={item.nome}
-                  className={`object-cover rounded-sm ${
-                    item.type === "design" ? "h-full" : "h-auto "
-                  }`}
-                />
+              <div
+                className="h-[400px] flex flex-col border border-fuchsia-600 rounded-sm bg-[#353535] shadow-lg transition-transform duration-200 
+              transform hover:-translate-y-1 hover:cursor-pointer"
+              >
+                {item.type === "design" ? (
+                  <img
+                    src={item.imagem}
+                    alt={item.nome}
+                    className="w-full h-full object-contain"
+                  />
+                ) : (
+                  <div className="w-full aspect-[4/3] overflow-hidden rounded-t-sm">
+                    <img
+                      src={item.imagem}
+                      alt={item.nome}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                )}
+
                 {item.type !== "design" && (
                   <div className="flex flex-col p-3 h-auto gap-2 w-full">
                     {item.type === "web" && (

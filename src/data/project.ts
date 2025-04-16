@@ -98,11 +98,14 @@ export const Project: ProjectType[] = [
     deploy: "https://info-dogs.vercel.app",
     github: "https://github.com/liviakobayashii/info-dogs",
   },
-  // {
-  //   id: 7,
-  //   nome: "testeDesign",
-  //   imagem: "loading.jpg",
-  //   type: "design",
-  //   project_technologies: [],
-  // },
+  {
+    id: 7,
+    nome: "Flyer leilão",
+    imagem: "design1.png",
+    type: "design",
+    project_technologies: [],
+    descricao: "",
+    deploy: "",
+    github: "",
+  },
 ];
