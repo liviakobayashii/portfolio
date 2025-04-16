@@ -2,6 +2,7 @@ import AboutMe from "@/components/about-me";
 import Contact from "@/components/contact";
 import MainSection from "@/components/main-section";
 import Projects from "@/components/projects/projects";
+import ScrollToTop from "@/components/scroll-to-top";
 import Skills from "@/components/skills";
 import { social } from "@/data/social";
 import { Icon } from "@iconify/react/dist/iconify.js";
@@ -12,9 +13,10 @@ export default function Page() {
 
   return (
     <>
+      <ScrollToTop />
       {linkWhatsapp && (
         <Link href={linkWhatsapp.href} target="_blank">
-          <button className="bg-[#59D264] rounded-full p-3 fixed bottom-0 right-0 m-5 'hover:cursor-pointer hover:bg-[#4ead55] duration-200 z-50">
+          <button className="bg-[#59D264] rounded-full p-3 fixed bottom-5 right-5 'hover:cursor-pointer hover:bg-[#4ead55] duration-200 z-50">
             <Icon icon="logos:whatsapp-icon" className="size-7" />
           </button>
         </Link>
