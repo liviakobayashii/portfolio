@@ -71,7 +71,7 @@ export default function Projects() {
       </ul>
 
       <div className="grid max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-4 p-10">
-        {filteredProjects.map((item) => {
+        {filteredProjects.reverse().map((item) => {
           const badges = technologies.filter((tec) =>
             item.project_technologies.includes(tec.name)
           );
