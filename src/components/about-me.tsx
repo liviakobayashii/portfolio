@@ -2,7 +2,7 @@ import Social from "./icons/social";
 
 export default function AboutMe() {
   return (
-    <>
+    <div className="container">
       <div
         className="flex flex-col gap-4 px-3 max-md:px-6 lg:w-2/3"
         data-aos="fade-up"
@@ -31,6 +31,6 @@ export default function AboutMe() {
         </p>
         <Social />
       </div>
-    </>
+    </div>
   );
 }

@@ -22,28 +22,30 @@ export default function Header() {
   }, []);
   return (
     <div
-      className={`flex max-md:flex-col md:justify-between md:items-center fixed w-screen z-53 px-10 duration-300 ${
+      className={`fixed w-screen z-53 duration-300 ${
         visible ? "bg-black/90" : "bg-black/30"
       }`}
     >
-      <div className="flex justify-between items-center">
-        <img src="logo.png" alt="Logo" className="size-30" />
-        <h1 className="max-lg:hidden text-3xl font-bold text-neutral-200">
-          Livia
-          <span className="bg-gradient-to-r from-fuchsia-300 via-fuchsia-400 to-fuchsia-600 bg-clip-text text-transparent">
-            Kobayashi
-          </span>
-        </h1>
-        <SheetItem />
+      <div className="container flex items-center justify-between duration-300">
+        <div className="flex justify-between items-center">
+          <img src="logo.png" alt="Logo" className="size-30" />
+          <h1 className="max-lg:hidden text-3xl font-bold text-neutral-200">
+            Livia
+            <span className="bg-gradient-to-r from-fuchsia-300 via-fuchsia-400 to-fuchsia-600 bg-clip-text text-transparent">
+              Kobayashi
+            </span>
+          </h1>
+          <SheetItem />
+        </div>
+        <ul className="flex gap-10 max-lg:hidden">
+          <Li />
+        </ul>
+        <Link href="curriculo.pdf" target="_blank">
+          <button className=" max-md:hidden bg-fuchsia-600 p-3 rounded-sm text-neutral-200 font-bold hover:cursor-pointer hover:bg-fuchsia-700 duration-200">
+            Baixar CV
+          </button>
+        </Link>
       </div>
-      <ul className="flex gap-10 max-lg:hidden">
-        <Li />
-      </ul>
-      <Link href="curriculo.pdf" target="_blank">
-        <button className=" max-md:hidden bg-fuchsia-600 p-3 rounded-sm text-neutral-200 font-bold hover:cursor-pointer hover:bg-fuchsia-700 duration-200">
-          Baixar CV
-        </button>
-      </Link>
     </div>
   );
 }

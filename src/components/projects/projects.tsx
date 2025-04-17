@@ -16,62 +16,63 @@ export default function Projects() {
   );
 
   return (
-    <>
-      <H2 text="Projetos" />
-
-      <ul
-        className="flex gap-5 text-neutral-200 font-medium text-md"
-        data-aos="fade-up"
-      >
-        <li
-          onClick={() => setFilter("all")}
-          className={`cursor-pointer ${
-            filter === "all" ? "text-fuchsia-600" : ""
-          }`}
+    <div className="container">
+      <div className="flex flex-col justify-center items-center">
+        <H2 text="Projetos" />
+        <ul
+          className="flex gap-5 text-neutral-200 font-medium text-md"
+          data-aos="fade-up"
         >
-          Todos
-        </li>
-        <li
-          onClick={() => setFilter("web")}
-          className={`sm:hidden cursor-pointer ${
-            filter === "web" ? "text-fuchsia-600" : ""
-          }`}
-        >
-          Web
-        </li>
-        <li
-          onClick={() => setFilter("web")}
-          className={`max-sm:hidden cursor-pointer ${
-            filter === "web" ? "text-fuchsia-600" : ""
-          }`}
-        >
-          Aplicativos web
-        </li>
-        <li
-          onClick={() => setFilter("mobile")}
-          className={`sm:hidden cursor-pointer ${
-            filter === "mobile" ? "text-fuchsia-600" : ""
-          }`}
-        >
-          Mobile
-        </li>
-        <li
-          onClick={() => setFilter("mobile")}
-          className={`max-sm:hidden cursor-pointer ${
-            filter === "mobile" ? "text-fuchsia-600" : ""
-          }`}
-        >
-          Aplicativos mobile
-        </li>
-        <li
-          onClick={() => setFilter("design")}
-          className={`cursor-pointer ${
-            filter === "design" ? "text-fuchsia-600" : ""
-          }`}
-        >
-          Design
-        </li>
-      </ul>
+          <li
+            onClick={() => setFilter("all")}
+            className={`cursor-pointer ${
+              filter === "all" ? "text-fuchsia-600" : ""
+            }`}
+          >
+            Todos
+          </li>
+          <li
+            onClick={() => setFilter("web")}
+            className={`sm:hidden cursor-pointer ${
+              filter === "web" ? "text-fuchsia-600" : ""
+            }`}
+          >
+            Web
+          </li>
+          <li
+            onClick={() => setFilter("web")}
+            className={`max-sm:hidden cursor-pointer ${
+              filter === "web" ? "text-fuchsia-600" : ""
+            }`}
+          >
+            Aplicativos web
+          </li>
+          <li
+            onClick={() => setFilter("mobile")}
+            className={`sm:hidden cursor-pointer ${
+              filter === "mobile" ? "text-fuchsia-600" : ""
+            }`}
+          >
+            Mobile
+          </li>
+          <li
+            onClick={() => setFilter("mobile")}
+            className={`max-sm:hidden cursor-pointer ${
+              filter === "mobile" ? "text-fuchsia-600" : ""
+            }`}
+          >
+            Aplicativos mobile
+          </li>
+          <li
+            onClick={() => setFilter("design")}
+            className={`cursor-pointer ${
+              filter === "design" ? "text-fuchsia-600" : ""
+            }`}
+          >
+            Design
+          </li>
+        </ul>
+      </div>
 
       <div
         className="grid max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-4 p-10"
@@ -148,6 +149,6 @@ export default function Projects() {
           <p className="text-white">Nenhum projeto encontrado.</p>
         )}
       </div>
-    </>
+    </div>
   );
 }
