@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Sheet,
   SheetContent,
@@ -6,13 +8,16 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { Icon } from "@iconify/react";
 import Li from "./li";
+import { useState } from "react";
 
 export default function SheetItem() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="lg:hidden">
-      <Sheet>
+      <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
           <Icon
             icon="material-symbols:menu-rounded"
@@ -26,7 +31,7 @@ export default function SheetItem() {
             </SheetTitle>
             <SheetDescription asChild>
               <ul className="flex flex-col gap-5">
-                <Li />
+                <Li onNavigate={() => setOpen(false)} />
               </ul>
             </SheetDescription>
           </SheetHeader>

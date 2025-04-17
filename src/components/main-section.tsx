@@ -17,7 +17,7 @@ export default function MainSection() {
             !
           </h2>
           <h1 className="max-sm:text-4xl sm:text-5xl md:text-6xl font-bold self-center text-neutral-200">
-            Transformando suas ideias em resultados
+            Transformando ideias em interfaces intuitivas.
           </h1>
         </div>
       </div>
