@@ -99,7 +99,7 @@ export const Project: ProjectType[] = [
     github: "https://github.com/liviakobayashii/info-dogs",
   },
   {
-    id: 7,
+    id: 9,
     nome: "Flyer leilão",
     imagem: "design1.png",
     type: "design",

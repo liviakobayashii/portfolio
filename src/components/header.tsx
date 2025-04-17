@@ -3,6 +3,8 @@
 import Link from "next/link";
 import Li from "./li";
 import { useEffect, useState } from "react";
+import SheeterItem from "./sheet-item";
+import SheetItem from "./sheet-item";
 
 export default function Header() {
   const [visible, setVisible] = useState(false);
@@ -24,28 +26,18 @@ export default function Header() {
         visible ? "bg-black/90" : "bg-black/30"
       }`}
     >
-      <div className="flex justify-center items-center">
+      <div className="flex justify-between items-center">
         <img src="logo.png" alt="Logo" className="size-30" />
-        <h1 className="text-3xl font-bold text-neutral-200">
+        <h1 className="max-lg:hidden text-3xl font-bold text-neutral-200">
           Livia
           <span className="bg-gradient-to-r from-fuchsia-300 via-fuchsia-400 to-fuchsia-600 bg-clip-text text-transparent">
             Kobayashi
           </span>
         </h1>
+        <SheetItem />
       </div>
-      <ul className="flex gap-10">
-        <Link href="#sobreMim">
-          <Li text="Sobre mim" />
-        </Link>
-        <Link href="#habilidades">
-          <Li text="Habilidades" />
-        </Link>
-        <Link href="#projetos">
-          <Li text="Projetos" />
-        </Link>
-        <Link href="#contato">
-          <Li text="Contato" />
-        </Link>
+      <ul className="flex gap-10 max-lg:hidden">
+        <Li />
       </ul>
       <Link href="curriculo.pdf" target="_blank">
         <button className=" max-md:hidden bg-fuchsia-600 p-3 rounded-sm text-neutral-200 font-bold hover:cursor-pointer hover:bg-fuchsia-700 duration-200">
