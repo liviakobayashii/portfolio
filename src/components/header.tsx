@@ -27,7 +27,7 @@ export default function Header() {
       }`}
     >
       <div className="container flex items-center justify-between duration-300">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center max-lg:w-full">
           <img src="logo.png" alt="Logo" className="size-30" />
           <h1 className="max-lg:hidden text-3xl font-bold text-neutral-200">
             Livia
@@ -41,7 +41,7 @@ export default function Header() {
           <Li />
         </ul>
         <Link href="curriculo.pdf" target="_blank">
-          <button className=" max-md:hidden bg-fuchsia-600 p-3 rounded-sm text-neutral-200 font-bold hover:cursor-pointer hover:bg-fuchsia-700 duration-200">
+          <button className=" max-lg:hidden bg-fuchsia-600 p-3 rounded-sm text-neutral-200 font-bold hover:cursor-pointer hover:bg-fuchsia-700 duration-200">
             Baixar CV
           </button>
         </Link>
