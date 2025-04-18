@@ -32,7 +32,10 @@ export default function Modal({
   return (
     <Dialog>
       <DialogTrigger>{children}</DialogTrigger>
-      <DialogContent className="lg:overflow-y-scroll max-h-[95%] lg:min-w-2xl">
+      <DialogContent
+        className="lg:overflow-y-scroll max-h-[95%] lg:min-w-2xl"
+        data-aos="fade"
+      >
         <DialogHeader>
           <DialogTitle className="text-3xl bg-gradient-to-r from-fuchsia-300 via-fuchsia-500 to-fuchsia-800 bg-clip-text text-transparent font-bold pb-1">
             {projectName}

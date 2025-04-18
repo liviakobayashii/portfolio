@@ -15,7 +15,7 @@ import { useEffect } from "react";
 export default function Page() {
   useEffect(() => {
     AOS.init({
-      duration: 800, // duração da animação
+      duration: 1000, // duração da animação
       once: true, // anima apenas uma vez
     });
   }, []);

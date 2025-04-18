@@ -102,6 +102,7 @@ export default function Projects() {
               <div
                 className="h-[400px] flex flex-col border border-fuchsia-600 rounded-sm bg-[#353535] shadow-lg transition-transform duration-200 
               transform hover:-translate-y-1 hover:cursor-pointer"
+                data-aos="fade"
               >
                 {item.type === "design" ? (
                   <img
