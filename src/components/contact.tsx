@@ -4,7 +4,6 @@ import H2 from "./h2";
 export default function Contact() {
   return (
     <>
-      {/* <section className=" flex justify-between rounded-sm bg-fuchsia-950 shadow-lg mx-4"> */}
       <section
         className=" flex rounded-sm shadow-lg bg-fuchsia-950 m-4 p-6 lg:p-10 gap-15 "
         data-aos="fade-up"
@@ -35,11 +34,7 @@ export default function Contact() {
             />
           </div>
         </div>
-        <img
-          src="contact.png"
-          alt="Contact"
-          className="max-w-96 max-lg:hidden"
-        />
+        <img src="contact.png" alt="Contact" className="w-100 max-lg:hidden" />
       </section>
       <footer className="mt-20 text-sm text-neutral-200">
         &copy; Desenvolvido por Livia Kobayashi
