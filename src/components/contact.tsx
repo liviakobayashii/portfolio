@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <>
       <section
-        className=" flex rounded-sm shadow-lg bg-fuchsia-950 m-4 p-6 lg:p-10 gap-15 "
+        className=" flex rounded-sm shadow-lg bg-fuchsia-950 p-4 md:p-6 lg:p-10 gap-15 "
         data-aos="fade-up"
       >
         <div className="flex flex-col gap-10 ">
