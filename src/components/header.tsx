@@ -11,7 +11,7 @@ export default function Header() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 100) {
         setVisible(true);
       } else {
         setVisible(false);
@@ -22,13 +22,13 @@ export default function Header() {
   }, []);
   return (
     <div
-      className={`fixed w-full z-53 duration-300 ${
+      className={`fixed w-full z-53 duration-500 ${
         visible ? "bg-black/90" : "bg-black/30"
       }`}
     >
       <div className="container flex items-center justify-between duration-300">
         <div className="flex justify-between items-center max-lg:w-full">
-          <img src="logo.png" alt="Logo" className="size-30" />
+          <img src="logo.png" alt="Logo" className="size-20" />
           <h1 className="max-lg:hidden text-3xl font-bold text-neutral-200">
             Livia
             <span className="bg-gradient-to-r from-fuchsia-300 via-fuchsia-400 to-fuchsia-600 bg-clip-text text-transparent">
