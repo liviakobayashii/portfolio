@@ -26,8 +26,8 @@ export default function Page() {
       <ScrollToTop />
       {linkWhatsapp && (
         <Link href={linkWhatsapp.href} target="_blank">
-          <button className="bg-[#59D264] rounded-full p-3 fixed bottom-5 right-5 'hover:cursor-pointer hover:bg-[#4ead55] duration-200 z-50">
-            <Icon icon="logos:whatsapp-icon" className="size-7" />
+          <button className="bg-[#59D264] rounded-full p-3 fixed bottom-5 right-5 'hover:cursor-pointer hover:bg-[#4ead55] duration-200 z-50 hover:cursor-pointer">
+            <Icon icon="logos:whatsapp-icon" className="w-7 h-7" />
           </button>
         </Link>
       )}
