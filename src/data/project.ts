@@ -103,9 +103,9 @@ export const Project: ProjectType[] = [
     nome: "Flyer leilão",
     imagem: "design1.png",
     type: "design",
-    project_technologies: [],
-    descricao: "",
-    deploy: "",
-    github: "",
+    project_technologies: null,
+    descricao: null,
+    deploy: null,
+    github: null,
   },
 ];

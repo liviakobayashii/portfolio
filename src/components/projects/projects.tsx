@@ -90,6 +90,7 @@ export default function Projects() {
               projectImage={item.imagem}
               linkDeploy={item.deploy}
               linkGitHub={item.github}
+              projectType={item.type}
               projectTechnologies={badges.map((badge, i) => (
                 <Icon
                   key={i}
