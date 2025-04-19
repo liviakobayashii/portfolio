@@ -6,11 +6,15 @@ export default function MainSection() {
     <>
       <Header />
       <section
-        className="container flex justify-center items-center h-screen"
+        className="container flex max-md:flex-col justify-center items-center h-screen"
         data-aos="fade"
       >
-        <div className="max-md:hidden flex justify-center items-center">
-          <img src="/perfil.png" alt="Perfil" className="w-100 rounded-full" />
+        <div className="">
+          <img
+            src="/perfil.png"
+            alt="Perfil"
+            className="w-100 max-md:w-70 rounded-full"
+          />
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col  max-md:justify-center max-md:items-center gap-6">
