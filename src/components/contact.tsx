@@ -9,7 +9,7 @@ export default function Contact() {
         data-aos="fade-up"
       >
         <div className="flex flex-col gap-10 ">
-          <div className="flex flex-col gap-2 ">
+          <div className="flex flex-col ">
             <H2 text="Contato" />
             <p className="max-sm:text-sm flex flex-wrap text-neutral-200/70 w-xs">
               Sinta-se à vontade para entrar em contato comigo através dos

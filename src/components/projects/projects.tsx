@@ -19,10 +19,7 @@ export default function Projects() {
     <div className="container">
       <div className="flex flex-col justify-center items-center">
         <H2 text="Projetos" />
-        <ul
-          className="flex gap-5 text-neutral-200 font-medium text-md"
-          data-aos="fade-up"
-        >
+        <ul className="flex gap-5 text-neutral-200" data-aos="fade-up">
           <li
             onClick={() => setFilter("all")}
             className={`cursor-pointer ${

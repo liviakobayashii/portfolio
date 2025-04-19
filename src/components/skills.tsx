@@ -4,8 +4,8 @@ import H2 from "./h2";
 
 export default function Skills() {
   return (
-    <div className="container">
-      <div className=" flex flex-col gap-2 justify-center items-center">
+    <div className="container flex flex-col gap-5">
+      <div className=" flex flex-col justify-center items-center">
         <H2 text="Habilidades" />
 
         <p className="text-neutral-200/70" data-aos="fade-up">
