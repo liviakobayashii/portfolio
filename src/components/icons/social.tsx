@@ -8,7 +8,10 @@ export default function Social() {
       {social.map((item, i) => (
         <Link key={i} href={item.href} target="_blank">
           <button className="bg-fuchsia-950 p-3 rounded-sm cursor-pointer hover:bg-fuchsia-700 duration-200 shadow-lg">
-            <Icon icon={item.icon} className="size-6 text-neutral-200" />
+            <Icon
+              icon={item.icon}
+              className="size-5 lg:size-6 text-neutral-200"
+            />
           </button>
         </Link>
       ))}
