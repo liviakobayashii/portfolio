@@ -40,7 +40,7 @@ export default function Header() {
         <ul className="flex gap-10 max-lg:hidden">
           <Li />
         </ul>
-        <Link href="curriculo.pdf" target="_blank">
+        <Link href="curriculo.pdf" target="_blank" download="curriculo.pdf">
           <button className=" max-lg:hidden bg-fuchsia-600 p-3 rounded-sm text-neutral-200 font-bold hover:cursor-pointer hover:bg-fuchsia-700 duration-200">
             Baixar CV
           </button>
