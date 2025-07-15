@@ -1,17 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { Project } from "@/data/project";
+import { Projects } from "@/data/project";
 import Description from "./description";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { technologies } from "@/data/technologies";
 import Modal from "../modal";
 import H2 from "../h2";
 
-export default function Projects() {
+export default function ProjectsList() {
   const [filter, setFilter] = useState("all");
 
-  const filteredProjects = Project.filter((item) =>
+  const filteredProjects = Projects.filter((item) =>
     filter === "all" ? true : item.type === filter
   );
 
@@ -72,7 +72,7 @@ export default function Projects() {
       </div>
 
       <div
-        className="grid max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-4 p-10"
+        className="grid max-sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 mt-4 p-10"
         data-aos="fade-up"
       >
         {filteredProjects.reverse().map((item) => {

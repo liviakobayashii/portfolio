@@ -35,7 +35,7 @@ export default function Modal({
     <Dialog>
       <DialogTrigger>{children}</DialogTrigger>
       <DialogContent
-        className="lg:overflow-y-scroll max-h-[95%] lg:min-w-2xl z-54"
+        className="overflow-y-scroll max-h-[95%] lg:min-w-2xl z-54"
         data-aos="fade"
       >
         <DialogHeader>
@@ -73,33 +73,37 @@ export default function Modal({
                     </div>
                   )}
 
-                  {(linkDeploy || linkGitHub) && (
-                    <div className="grid grid-cols-4 justify-center items-center">
-                      {linkDeploy && (
-                        <Link
-                          href={linkDeploy}
-                          className="col-span-3 text-neutral-200 hover:cursor-pointer"
-                          target="_blank"
-                        >
-                          <button className="p-3 rounded-sm bg-fuchsia-600 w-full">
-                            Vizualizar projeto
-                          </button>
-                        </Link>
-                      )}
-                      {linkGitHub && (
-                        <Link
-                          href={linkGitHub}
-                          className="col-span-1 text-white/70 hover:cursor-pointer hover:text-fuchsia-600 duration-200"
-                          target="_blank"
-                        >
-                          <Icon
-                            icon="simple-icons:github"
-                            className="size-8 w-full"
-                          />
-                        </Link>
-                      )}
-                    </div>
-                  )}
+                  <div
+                    className={`grid ${
+                      linkGitHub ? "grid-cols-4" : "grid-cols-1"
+                    } justify-center items-center gap-2`}
+                  >
+                    {linkDeploy && (
+                      <Link
+                        href={linkDeploy}
+                        className={`text-neutral-200 hover:cursor-pointer ${
+                          linkGitHub ? "col-span-3" : "col-span-1"
+                        }`}
+                        target="_blank"
+                      >
+                        <button className="p-3 rounded-sm bg-fuchsia-600 w-full cursor-pointer">
+                          Visualizar projeto
+                        </button>
+                      </Link>
+                    )}
+                    {linkGitHub && (
+                      <Link
+                        href={linkGitHub}
+                        className="col-span-1 text-white/70 hover:cursor-pointer hover:text-fuchsia-600 duration-200"
+                        target="_blank"
+                      >
+                        <Icon
+                          icon="simple-icons:github"
+                          className="size-8 w-full"
+                        />
+                      </Link>
+                    )}
+                  </div>
                 </>
               )}
             </section>

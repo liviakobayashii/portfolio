@@ -6,14 +6,14 @@ export default function MainSection() {
     <>
       <Header />
       <section
-        className="container flex max-md:flex-col justify-center items-center h-screen"
+        className="container flex max-md:flex-col justify-center items-center h-screen gap-10"
         data-aos="fade"
       >
-        <div className="">
+        <div className="flex gap-10">
           <img
             src="/perfil.png"
             alt="Perfil"
-            className="w-100 max-md:w-70 rounded-full"
+            className="w-70 max-md:w-70 rounded-full"
           />
         </div>
         <div className="flex flex-col justify-center items-center">

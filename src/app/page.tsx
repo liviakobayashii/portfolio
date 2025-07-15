@@ -2,15 +2,15 @@
 import AboutMe from "@/components/about-me";
 import Contact from "@/components/contact";
 import MainSection from "@/components/main-section";
-import Projects from "@/components/projects/projects";
 import ScrollToTop from "@/components/scroll-to-top";
 import Skills from "@/components/skills";
 import { social } from "@/data/social";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ProjectsList from "@/components/projects/projects-list";
 
 export default function Page() {
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function Page() {
       </section>
       <section
         id="sobreMim"
-        className="flex flex-col gap-6 py-30 bg-radial from-[#242424] via-[#1c1c1c] to-[#161616] lg:justify-center lg:items-center "
+        className="flex flex-col gap-6 py-30 bg-radi  al from-[#242424] via-[#1c1c1c] to-[#161616] lg:justify-center lg:items-center "
       >
         <AboutMe />
       </section>
@@ -51,7 +51,7 @@ export default function Page() {
         id="projetos"
         className="flex flex-col gap-6 justify-center items-center py-30 bg-radial from-[#242424] via-[#1c1c1c] to-[#161616]"
       >
-        <Projects />
+        <ProjectsList />
       </section>
 
       <section
