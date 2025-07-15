@@ -1,6 +1,6 @@
 import { ProjectType } from "@/types/projectType";
 
-export const Project: ProjectType[] = [
+export const Projects: ProjectType[] = [
   {
     id: 1,
     nome: "Calculadora",
@@ -106,6 +106,27 @@ export const Project: ProjectType[] = [
     project_technologies: null,
     descricao: null,
     deploy: null,
+    github: null,
+  },
+  {
+    id: 10,
+    nome: "Landing Page - Zyro Outsourcing",
+    imagem: "/mockup-zyro.png",
+    type: "web",
+    project_technologies: [
+      "HTML5",
+      "CSS3",
+      "Typescript",
+      "NextJS",
+      "React",
+      "TailwindCSS",
+      "Shadcn/UI",
+      "React Hook Form",
+      "Zod",
+    ],
+    descricao:
+      "Landing page institucional desenvolvida para a Zyro Outsourcing com foco em fortalecer sua presença digital e apresentar seus serviços de forma estratégica e responsiva, alinhada à identidade da marca. ",
+    deploy: "https://www.zyroout.com.br",
     github: null,
   },
 ];
