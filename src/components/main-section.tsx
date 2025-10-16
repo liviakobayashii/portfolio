@@ -13,7 +13,7 @@ export default function MainSection() {
           <img
             src="/perfil.png"
             alt="Perfil"
-            className="w-70 max-md:w-70 rounded-full"
+            className="w-85 max-md:w-85 rounded-full"
           />
         </div>
         <div className="flex flex-col justify-center items-center">

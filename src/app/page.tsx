@@ -37,7 +37,7 @@ export default function Page() {
       </section>
       <section
         id="sobreMim"
-        className="flex flex-col gap-6 py-30 bg-radi  al from-[#242424] via-[#1c1c1c] to-[#161616] lg:justify-center lg:items-center "
+        className="flex flex-col gap-6 py-30 bg-radial from-[#242424] via-[#1c1c1c] to-[#161616] lg:justify-center lg:items-center "
       >
         <AboutMe />
       </section>

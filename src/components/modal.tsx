@@ -35,7 +35,7 @@ export default function Modal({
     <Dialog>
       <DialogTrigger>{children}</DialogTrigger>
       <DialogContent
-        className="overflow-y-scroll max-h-[95%] lg:min-w-2xl z-54"
+        className="overflow-y-auto max-h-[95%] lg:min-w-2xl z-54"
         data-aos="fade"
       >
         <DialogHeader>
@@ -74,16 +74,14 @@ export default function Modal({
                   )}
 
                   <div
-                    className={`grid ${
-                      linkGitHub ? "grid-cols-4" : "grid-cols-1"
-                    } justify-center items-center gap-2`}
+                    className={`grid ${linkGitHub ? "grid-cols-4" : "grid-cols-1"
+                      } justify-center items-center gap-2`}
                   >
                     {linkDeploy && (
                       <Link
                         href={linkDeploy}
-                        className={`text-neutral-200 hover:cursor-pointer ${
-                          linkGitHub ? "col-span-3" : "col-span-1"
-                        }`}
+                        className={`text-neutral-200 hover:cursor-pointer ${linkGitHub ? "col-span-3" : "col-span-1"
+                          }`}
                         target="_blank"
                       >
                         <button className="p-3 rounded-sm bg-fuchsia-600 w-full cursor-pointer">

@@ -11,7 +11,7 @@ export const technologies = [
   { name: "Github", icon: "simple-icons:github" },
   { name: "TailwindCSS", icon: "simple-icons:tailwindcss" },
   { name: "ShadcnUi", icon: "simple-icons:shadcnui" },
-  { name: "React Hook Form", icon: "lets-icons:form" },
+  { name: "React Hook Form", icon: "simple-icons:reacthookform" },
   { name: "Zod", icon: "simple-icons:zod" },
   { name: "Axios", icon: "simple-icons:axios" },
   { name: "Figma", icon: "simple-icons:figma" },

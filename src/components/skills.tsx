@@ -12,7 +12,7 @@ export default function Skills() {
           Tecnologias que utilizo ou já utilizei
         </p>
       </div>
-      <div className="max-w-150 mx-auto">
+      <div className="mx-auto">
         <div
           className="grid max-sm:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 justify-center items-center mt-4"
           data-aos="fade-up"
@@ -20,10 +20,10 @@ export default function Skills() {
           {technologies.map((item, i) => (
             <div
               key={i}
-              className="flex flex-col gap-2 w-25 h-25 justify-center items-center bg-fuchsia-950  text-white shadow-lg rounded-sm max-sm:p-2 sm:p-4 cursor-pointer duration-200 hover:text-fuchsia-600"
+              className="flex flex-col gap-2 w-30 h-30 justify-center items-center bg-fuchsia-950  text-white shadow-lg rounded-sm max-sm:p-2 sm:p-4 cursor-pointer duration-200 hover:text-fuchsia-600 m-1"
             >
               <Icon icon={item.icon} className="size-12 max-sm:size-10" />
-              <p className="text-sm ">{item.name}</p>
+              <p className="text-sm text-center">{item.name}</p>
             </div>
           ))}
         </div>

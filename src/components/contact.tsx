@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <>
       <section
-        className=" flex rounded-sm shadow-lg bg-fuchsia-950 p-4 md:p-6 lg:p-10 gap-15 "
+        className="flex rounded-sm shadow-lg bg-fuchsia-950 p-4 md:p-6 lg:p-15 gap-15 "
         data-aos="fade-up"
       >
         <div className="flex flex-col gap-10 ">
@@ -16,7 +16,7 @@ export default function Contact() {
               canais abaixo.
             </p>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 lg:gap-7">
             <ContactItem
               icon="line-md:email-multiple"
               title="Email"

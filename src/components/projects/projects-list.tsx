@@ -22,49 +22,43 @@ export default function ProjectsList() {
         <ul className="flex gap-5 text-neutral-200" data-aos="fade-up">
           <li
             onClick={() => setFilter("all")}
-            className={`cursor-pointer ${
-              filter === "all" ? "text-fuchsia-600" : ""
-            }`}
+            className={`cursor-pointer ${filter === "all" ? "text-fuchsia-600" : ""
+              }`}
           >
             Todos
           </li>
           <li
             onClick={() => setFilter("web")}
-            className={`sm:hidden cursor-pointer ${
-              filter === "web" ? "text-fuchsia-600" : ""
-            }`}
+            className={`sm:hidden cursor-pointer ${filter === "web" ? "text-fuchsia-600" : ""
+              }`}
           >
             Web
           </li>
           <li
             onClick={() => setFilter("web")}
-            className={`max-sm:hidden cursor-pointer ${
-              filter === "web" ? "text-fuchsia-600" : ""
-            }`}
+            className={`max-sm:hidden cursor-pointer ${filter === "web" ? "text-fuchsia-600" : ""
+              }`}
           >
             Aplicativos web
           </li>
           <li
             onClick={() => setFilter("mobile")}
-            className={`sm:hidden cursor-pointer ${
-              filter === "mobile" ? "text-fuchsia-600" : ""
-            }`}
+            className={`sm:hidden cursor-pointer ${filter === "mobile" ? "text-fuchsia-600" : ""
+              }`}
           >
             Mobile
           </li>
           <li
             onClick={() => setFilter("mobile")}
-            className={`max-sm:hidden cursor-pointer ${
-              filter === "mobile" ? "text-fuchsia-600" : ""
-            }`}
+            className={`max-sm:hidden cursor-pointer ${filter === "mobile" ? "text-fuchsia-600" : ""
+              }`}
           >
             Aplicativos mobile
           </li>
           <li
             onClick={() => setFilter("design")}
-            className={`cursor-pointer ${
-              filter === "design" ? "text-fuchsia-600" : ""
-            }`}
+            className={`cursor-pointer ${filter === "design" ? "text-fuchsia-600" : ""
+              }`}
           >
             Design
           </li>
@@ -113,7 +107,7 @@ export default function ProjectsList() {
                     <img
                       src={item.imagem}
                       alt={item.nome}
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 )}
