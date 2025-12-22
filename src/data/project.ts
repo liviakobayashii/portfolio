@@ -129,4 +129,27 @@ export const Projects: ProjectType[] = [
     deploy: "https://www.zyroout.com.br",
     github: null,
   },
+  {
+    id: 11,
+    nome: "SaaS de Agendamento para Barbearias",
+    imagem: "/mockup-aparatus.png",
+    type: "web",
+    project_technologies: [
+      "HTML5",
+      "CSS3",
+      "Typescript",
+      "NextJS",
+      "TailwindCSS",
+      "Shadcn/UI",
+      "Zod",
+      "Stripe",
+      "PostgreSQL",
+      "Prisma",
+      "BetterAuth"
+    ],
+    descricao:
+      "Sistema de agendamentos para barbearias, desenvolvido no FullStackWeekend, com foco em desempenho e usabilidade. Permite buscar estabelecimentos, agendar serviços e gerenciar horários, com IA por voz e texto, pagamentos via Stripe e autenticação segura (BetterAuth).",
+    deploy: "https://aparatus-livia-kobayashi.vercel.app",
+    github: "https://github.com/liviakobayashii/fsw-aparatus",
+  },
 ];

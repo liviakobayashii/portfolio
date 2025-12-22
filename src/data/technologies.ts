@@ -17,4 +17,8 @@ export const technologies = [
   { name: "Figma", icon: "simple-icons:figma" },
   { name: "Gimp", icon: "simple-icons:gimp" },
   { name: "Photoshop", icon: "mage:photoshop" },
+  { name: "Stripe", icon: "simple-icons:stripe" },
+  { name: "PostgreSQL", icon: "simple-icons:postgresql" },
+  { name: "Prisma", icon: "simple-icons:prisma" },
+  { name: "BetterAuth", icon: "simple-icons:betterauth" },
 ];
