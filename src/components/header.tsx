@@ -22,9 +22,8 @@ export default function Header() {
   }, []);
   return (
     <div
-      className={`fixed w-full z-53 duration-500 ${
-        visible ? "bg-black/90" : "bg-black/30"
-      }`}
+      className={`fixed w-full z-53 duration-500 ${visible ? "bg-black/90" : "bg-black/30"
+        }`}
     >
       <div className="container flex items-center justify-between duration-300">
         <div className="flex justify-between items-center max-lg:w-full">
@@ -43,7 +42,7 @@ export default function Header() {
         <Link
           href="curriculo_livia.pdf"
           target="_blank"
-          download="curriculo.pdf"
+          download="curriculo_livia_kobayashi.pdf"
         >
           <button className=" max-lg:hidden bg-fuchsia-600 p-3 rounded-sm text-neutral-200 font-bold hover:cursor-pointer hover:bg-fuchsia-700 duration-200">
             Baixar CV
